@@ -5,12 +5,12 @@ import { hashHistory } from 'react-router';
 
 class Dashboard extends React.Component{
 
-  componentWillUpdate(nextProps){
-    if(this.props.data.user && !nextProps.data.user){
-      // if no user before and there is user now need to redirect
-      hashHistory.push('/');
-    }
-  }
+  // componentWillUpdate(nextProps){
+  //   if(this.props.data.user && !nextProps.data.user){
+  //     // if no user before and there is user now need to redirect
+  //     hashHistory.push('/');
+  //   }
+  // }
 
   render(){
       return(
@@ -21,5 +21,4 @@ class Dashboard extends React.Component{
   }
 }
 
-export default
-graphql(query)(Dashboard);
+export default graphql(query)(Dashboard);
