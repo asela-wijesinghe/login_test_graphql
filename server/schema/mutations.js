@@ -37,8 +37,8 @@ const mutation = new GraphQLObjectType({
       resolve(parentValue, {email, password}, req){
         return AuthService.login({email, password,req});
       }
-    },
-  }}
-)
+    }
+  }
+})
 
 module.exports = mutation;
